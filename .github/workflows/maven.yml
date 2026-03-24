@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build JsonSelTestSat
-      run: mvn -B package --file JsonSelTestSat/pom.xml
+      run: cd JsonSelTestSat && mvn -B package 
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
