@@ -27,8 +27,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build JsonSelTestSat
-      run: cd JsonSelTestSat && mvn -B package 
+    - name: Build and Run Tests
+      run: cd JsonSelTestSat &&  mvn clean test
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
    # - name: Update dependency graph
