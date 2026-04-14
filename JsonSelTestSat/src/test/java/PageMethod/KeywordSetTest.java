@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class KeywordSet {
-	
+public class KeywordSetTest {
+
 	WebDriver driver;
-	
+
 	public void  type(WebDriver driver, String lcoator, String data) {
 		try {
 			WebElement element = driver.findElement(By.xpath(lcoator));
@@ -19,7 +19,7 @@ public class KeywordSet {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void click(WebDriver driver , String lcoator) {
 		try {
 			WebElement element = driver.findElement(By.xpath(lcoator));
@@ -29,11 +29,11 @@ public class KeywordSet {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void VerifyText(WebDriver driver,String locator, String extText) {
 		WebElement element = driver.findElement(By.xpath(locator));
 		String actText = driver.findElement(By.xpath(locator)).getText();
-		
+
 		Assert.assertEquals(extText, actText);
 		Assert.assertTrue(element.isDisplayed());
 	}

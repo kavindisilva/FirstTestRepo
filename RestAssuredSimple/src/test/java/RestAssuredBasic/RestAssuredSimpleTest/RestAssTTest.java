@@ -1,4 +1,4 @@
-package RestAssuredBasic.RestAssuredSimple;
+package RestAssuredBasic.RestAssuredSimpleTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class RestAssT {
+public class RestAssTTest {
 	WebDriver driver;
   @Test
   public void f() {
