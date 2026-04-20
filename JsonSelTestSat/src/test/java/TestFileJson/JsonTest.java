@@ -1,21 +1,19 @@
 package TestFileJson;
 
-import org.testng.annotations.Test;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-
-import JsonReaderFile.ReaderJson;
-import PageMethod.KeywordSet;
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-import org.testng.annotations.BeforeMethod;
-
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+
+import JsonReaderFile.ReaderJsonTest;
+import PageMethod.KeywordSetTest;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class JsonTest {
 	WebDriver driver;
@@ -27,14 +25,14 @@ public class JsonTest {
 	 // String locator_selectItem = "//div[text()='Sauce Labs Backpack']";
   @Test
   public void f() throws JsonProcessingException, IOException {
-	  JsonNode nd = ReaderJson.ReadJsonData().get("cred");
+	  JsonNode nd = ReaderJsonTest.ReadJsonData().get("cred");
 	  for(JsonNode node: nd) {
 		  String name = nd.get("usrname").asText();
 		  String pd = nd.get("pwd").asText();
 		  String exp = nd.get("expText").asText();
-		  
-		  
-		  KeywordSet key =  new KeywordSet();
+
+
+		  KeywordSetTest key =  new KeywordSetTest();
 		  key.type(driver, locator_uname, name);
 		  key.type(driver, locator_pwd, pd);
 		  key.click(driver, locator_login);
@@ -47,9 +45,9 @@ public class JsonTest {
 	  driver = new ChromeDriver();
 	  driver.manage().window().maximize();
 	  driver.get("https://www.saucedemo.com/");
-	  
+
   }
-  
+
 
   @AfterMethod
   public void afterMethod() {
