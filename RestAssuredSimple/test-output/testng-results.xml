@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-14T18:10:37 GMT" name="Default suite" finished-at="2026-03-14T18:11:00 GMT" duration-ms="22965">
+  <suite started-at="2026-04-21T15:00:18 BST" name="Default suite" finished-at="2026-04-21T15:00:41 BST" duration-ms="22396">
     <groups>
     </groups>
-    <test started-at="2026-03-14T18:10:37 GMT" name="Default test" finished-at="2026-03-14T18:11:00 GMT" duration-ms="22965">
-      <class name="RestAssuredBasic.RestAssuredSimple.RestAssT">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RestAssuredBasic.RestAssuredSimple.RestAssT@74751b3]" started-at="2026-03-14T18:10:37 GMT" name="beforeMethod" finished-at="2026-03-14T18:10:52 GMT" duration-ms="14440" status="PASS">
+    <test started-at="2026-04-21T15:00:18 BST" name="Default test" finished-at="2026-04-21T15:00:41 BST" duration-ms="22396">
+      <class name="RestAssuredBasic.RestAssuredSimpleTest.RestAssTTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RestAssuredBasic.RestAssuredSimpleTest.RestAssTTest@74751b3]" started-at="2026-04-21T15:00:18 BST" name="beforeMethod" finished-at="2026-04-21T15:00:32 BST" duration-ms="13813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:0, instance:RestAssuredBasic.RestAssuredSimple.RestAssT@74751b3]" started-at="2026-03-14T18:10:52 GMT" name="f" finished-at="2026-03-14T18:11:00 GMT" duration-ms="8268" status="PASS">
+        <test-method signature="f()[pri:0, instance:RestAssuredBasic.RestAssuredSimpleTest.RestAssTTest@74751b3]" started-at="2026-04-21T15:00:32 BST" name="f" finished-at="2026-04-21T15:00:41 BST" duration-ms="8393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:RestAssuredBasic.RestAssuredSimple.RestAssT@74751b3]" started-at="2026-03-14T18:11:00 GMT" name="afterMethod" finished-at="2026-03-14T18:11:00 GMT" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:RestAssuredBasic.RestAssuredSimpleTest.RestAssTTest@74751b3]" started-at="2026-04-21T15:00:41 BST" name="afterMethod" finished-at="2026-04-21T15:00:41 BST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- RestAssuredBasic.RestAssuredSimple.RestAssT -->
+      </class> <!-- RestAssuredBasic.RestAssuredSimpleTest.RestAssTTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
