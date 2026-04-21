@@ -4,7 +4,7 @@
     
     <test name="RegressionTests">
         <classes>
-            <class name="HybridJsonSelFrameTest.JsonSelTestSat.Deserialization"/>
+            <class name="HybridJsonSelFrameTest.JsonSelTestSat.DeserializationTest"/>
             <class name="TestFileJson.JsonTest"/>
         </classes>
     </test>

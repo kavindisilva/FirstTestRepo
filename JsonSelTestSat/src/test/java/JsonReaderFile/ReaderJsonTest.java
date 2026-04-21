@@ -9,11 +9,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 public class ReaderJsonTest {
-	private static final String path = "/Users/udarajayawardhane/Documents/KavindiEclipse/JsonSelTestSat/testdata.json";
+	//private static final String path = "/Users/udarajayawardhane/Documents/KavindiEclipse/JsonSelTestSat/testdata.json";
 
 	public static JsonNode ReadJsonData() throws JsonProcessingException, IOException {
+//		ObjectMapper mapper = new ObjectMapper();
+//		return mapper.readTree(new File(path));
 		ObjectMapper mapper = new ObjectMapper();
-		return mapper.readTree(new File(path));
+
+        return mapper.readTree(
+            ReaderJsonTest.class.getClassLoader().getResourceAsStream("testdata.json")
+        );
 
 
 	}
