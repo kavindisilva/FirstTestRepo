@@ -29,9 +29,9 @@ public class JsonTest {
   public void f() throws JsonProcessingException, IOException {
 	  JsonNode nd = ReaderJsonTest.ReadJsonData().get("cred");
 	  for(JsonNode node: nd) {
-		  String name = nd.get("usrname").asText();
-		  String pd = nd.get("pwd").asText();
-		  String exp = nd.get("expText").asText();
+		  String name = node.get("usrname").asText();
+		  String pd = node.get("pwd").asText();
+		  String exp = node.get("expText").asText();
 
 
 		  KeywordSetTest key =  new KeywordSetTest();
